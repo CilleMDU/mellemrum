@@ -12,7 +12,7 @@ Guiden hjælper dig med at få React-projektet til at køre lokalt og forbinde d
 
 - Node.js installeret på din computer
 - en Supabase-konto
-- projektet åbnet i VS Code
+- projektet åbnet
 
 ## 1. Installér projektet
 
