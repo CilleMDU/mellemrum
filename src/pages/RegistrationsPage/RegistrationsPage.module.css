@@ -1,10 +1,10 @@
-.adminHeader {
+.registrationsHeader {
   background: var(--green);
   color: white;
   padding: 5rem var(--content-edge);
 }
 
-.eyebrow {
+.registrationsEyebrow {
   color: var(--lime);
   font-size: 0.78rem;
   font-weight: 800;
@@ -13,7 +13,7 @@
   text-transform: uppercase;
 }
 
-.adminHeader h1 {
+.registrationsHeader h1 {
   font-size: clamp(3rem, 7vw, 6.5rem);
   letter-spacing: -0.065em;
   line-height: 0.95;

@@ -24,8 +24,8 @@ export default function RegistrationsPage() {
 
   return (
     <>
-      <header className={styles.adminHeader}>
-        <p className={styles.eyebrow}>Internt overblik</p>
+      <header className={styles.registrationsHeader}>
+        <p className={styles.registrationsEyebrow}>Internt overblik</p>
         <h1>Tilmeldinger</h1>
         <p>{registrationCount} tilmeldinger i alt</p>
       </header>

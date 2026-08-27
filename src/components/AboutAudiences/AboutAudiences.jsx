@@ -5,7 +5,7 @@ export default function AboutAudiences() {
   return (
     <section className={styles.aboutAudiences} aria-labelledby="about-audiences-title">
       <div className={styles.aboutSectionHeading}>
-        <p className={styles.eyebrow}>Målgrupper</p>
+        <p className={styles.aboutEyebrow}>Målgrupper</p>
         <h2 id="about-audiences-title">Mellemrum forbinder oplevelser med mennesker.</h2>
       </div>
       <div className={styles.aboutAudienceSplit}>

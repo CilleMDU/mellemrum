@@ -8,7 +8,7 @@ export default function AboutPage() {
     <>
       <header className={`${styles.pageHeader} ${styles.aboutHeader}`}>
         <div className={styles.aboutHeaderContent}>
-          <p className={styles.eyebrow}>Om Mellemrum</p>
+          <p className={styles.aboutEyebrow}>Om Mellemrum</p>
           <h1>Vi skaber mellemrum i kalenderen.</h1>
           <p>Udvalgte kulturoplevelser og nye perspektiver på Aarhus.</p>
         </div>
@@ -16,7 +16,7 @@ export default function AboutPage() {
       <main className={styles.aboutPage}>
         <section className={styles.aboutIntro} aria-labelledby="about-intro-title">
           <div>
-            <p className={`${styles.eyebrow} ${styles.dark}`}>Idéen</p>
+            <p className={`${styles.aboutEyebrow} ${styles.dark}`}>Idéen</p>
             <h2 id="about-intro-title">En enkel vej til det, der sker tæt på.</h2>
           </div>
           <div className={styles.aboutIntroCopy}>

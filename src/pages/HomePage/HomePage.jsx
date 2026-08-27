@@ -37,7 +37,7 @@ export default function HomePage() {
   return (
     <>
       <header className={styles.hero}>
-        <p className={styles.eyebrow}>Kultur i Aarhus</p>
+        <p className={styles.homeEyebrow}>Kultur i Aarhus</p>
         <h1>Find plads til noget nyt.</h1>
         <p className={styles.heroCopy}>
           Koncerter, talks og workshops samlet ét sted. Find dit næste event, og tilmeld dig på få minutter.
@@ -50,7 +50,7 @@ export default function HomePage() {
       <main id="events">
         <section className={styles.sectionHeading}>
           <div>
-            <p className={`${styles.eyebrow} ${styles.dark}`}>Det sker</p>
+            <p className={`${styles.homeEyebrow} ${styles.dark}`}>Det sker</p>
             <h2>Kommende events</h2>
           </div>
           <p>Kuraterede oplevelser i byen – fra små scener til store idéer.</p>

@@ -1,4 +1,4 @@
-.eyebrow {
+.aboutEyebrow {
   color: var(--lime);
   font-size: 0.78rem;
   font-weight: 800;
@@ -7,7 +7,7 @@
   text-transform: uppercase;
 }
 
-.eyebrow.dark {
+.aboutEyebrow.dark {
   color: var(--green);
 }
 
@@ -52,7 +52,7 @@
   padding: clamp(2.5rem, 6vw, 6rem);
 }
 
-.aboutCity p:not(.eyebrow) {
+.aboutCity p:not(.aboutEyebrow) {
   font-size: clamp(1.1rem, 2vw, 1.35rem);
   margin: 1.75rem 0;
 }

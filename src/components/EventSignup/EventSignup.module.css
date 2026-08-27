@@ -1,4 +1,4 @@
-.eyebrow {
+.eventEyebrow {
   color: var(--lime);
   font-size: 0.78rem;
   font-weight: 800;
@@ -7,7 +7,7 @@
   text-transform: uppercase;
 }
 
-.eyebrow.dark {
+.eventEyebrow.dark {
   color: var(--green);
 }
 
