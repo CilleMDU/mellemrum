@@ -2,19 +2,6 @@
   max-width: 128rem;
 }
 
-.eyebrow {
-  color: var(--lime);
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.16em;
-  margin: 0 0 1rem;
-  text-transform: uppercase;
-}
-
-.eyebrow.dark {
-  color: var(--green);
-}
-
 .lead {
   color: var(--ink) !important;
   font-size: clamp(1.25rem, 2vw, 1.7rem) !important;
@@ -74,70 +61,8 @@
   grid-template-columns: 5rem 1fr;
 }
 
-.signupPanel {
-  background: var(--lime);
-  border-radius: 1.8rem;
-  display: grid;
-  gap: 4rem;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 2rem;
-  padding: clamp(2rem, 5vw, 5rem);
-}
-
-.signupPanel h2 {
-  font-size: clamp(2.2rem, 4vw, 4rem);
-  letter-spacing: -0.055em;
-  line-height: 1;
-  margin: 0;
-}
-
-.signupPanel label {
-  display: grid;
-  font-size: 0.78rem;
-  font-weight: 800;
-  gap: 0.45rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.signupPanel form {
-  display: grid;
-  gap: 0.65rem;
-}
-
-.signupPanel form > span {
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  margin-top: 0.3rem;
-  text-transform: uppercase;
-}
-
-.signupPanel button {
-  background: var(--green);
-  border: 0;
-  color: white;
-  cursor: pointer;
-  font-weight: 800;
-  margin-top: 0.7rem;
-  min-height: 5rem;
-  padding: 0.8rem 1.1rem;
-}
-
-.signupPanel button:disabled {
-  cursor: wait;
-  opacity: 0.65;
-}
-
-.formMessage {
-  background: rgba(255, 255, 255, 0.55);
-  margin: 0.5rem 0 0;
-  padding: 0.8rem;
-}
-
 @media (max-width: 900px) {
-  .eventDetail,
-  .signupPanel {
+  .eventDetail {
     grid-template-columns: 1fr;
   }
 

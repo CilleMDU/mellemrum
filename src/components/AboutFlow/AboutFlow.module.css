@@ -1,0 +1,77 @@
+.eyebrow {
+  color: var(--lime);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  margin: 0 0 1rem;
+  text-transform: uppercase;
+}
+
+.eyebrow.dark {
+  color: var(--green);
+}
+
+.aboutSectionHeading {
+  padding: 0;
+}
+
+.aboutSectionHeading h2 {
+  max-width: 14ch;
+}
+
+.aboutFlowList {
+  counter-reset: flow;
+  display: grid;
+  gap: 0;
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+  margin: clamp(2.5rem, 5vw, 4.5rem) 0 0;
+  padding: 0;
+}
+
+.aboutFlowList li {
+  border-top: 0.5rem solid var(--green);
+  min-height: 26rem;
+  padding: 1.6rem clamp(1rem, 3vw, 2.5rem) 0 0;
+}
+
+.aboutFlowList li:nth-child(2) {
+  border-color: #2f695a;
+}
+
+.aboutFlowList li:nth-child(3) {
+  border-color: var(--lime);
+}
+
+.aboutFlowList span {
+  color: #a5412c;
+  display: block;
+  margin-bottom: 3.5rem;
+}
+
+.aboutFlowList strong {
+  display: block;
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  letter-spacing: -0.035em;
+  line-height: 1.1;
+}
+
+.aboutFlowList p {
+  margin-bottom: 0;
+  max-width: 22rem;
+}
+
+@media (max-width: 620px) {
+  .aboutFlowList {
+    grid-template-columns: 1fr;
+  }
+
+  .aboutFlowList li {
+    min-height: 0;
+    padding-bottom: 2rem;
+  }
+
+  .aboutFlowList span {
+    margin-bottom: 2rem;
+  }
+}

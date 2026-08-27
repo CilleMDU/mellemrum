@@ -5,3 +5,4 @@ Process
 - Put the relevant styles in the correct CSS files
 - Changed the classnames to fit style format
 - Updating the naming format
+- Seperating the pages into components to shorten CSS

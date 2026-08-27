@@ -1,0 +1,90 @@
+.eyebrow {
+  color: var(--lime);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  margin: 0 0 1rem;
+  text-transform: uppercase;
+}
+
+.eyebrow.dark {
+  color: var(--green);
+}
+
+.aboutCity {
+  align-items: stretch;
+  background: var(--cream);
+  border-radius: 1.8rem;
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(32rem, 0.75fr);
+  overflow: hidden;
+}
+
+.aboutCity figure {
+  min-height: 62rem;
+  margin: 0;
+  position: relative;
+}
+
+.aboutCity img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.aboutCity figcaption {
+  background: var(--lime);
+  bottom: 0;
+  color: var(--green);
+  font-size: 0.78rem;
+  font-weight: 800;
+  left: 0;
+  letter-spacing: 0.08em;
+  padding: 0.8rem 1rem;
+  position: absolute;
+  text-transform: uppercase;
+}
+
+.aboutCity > div {
+  align-content: center;
+  display: grid;
+  padding: clamp(2.5rem, 6vw, 6rem);
+}
+
+.aboutCity p:not(.eyebrow) {
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  margin: 1.75rem 0;
+}
+
+.aboutCta {
+  align-self: flex-start;
+  background: var(--green);
+  border-radius: 99.9rem;
+  color: white;
+  font-weight: 800;
+  padding: 0.85rem 1.15rem;
+  text-decoration: none;
+  text-decoration-color: currentColor;
+  text-underline-offset: 0.35rem;
+}
+
+@media (max-width: 900px) {
+  .aboutCity {
+    grid-template-columns: 1fr;
+  }
+
+  .aboutCity figure {
+    min-height: 48rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .aboutCity {
+    border-radius: 1.4rem;
+  }
+
+  .aboutCity figure {
+    min-height: 40rem;
+  }
+}
