@@ -1,12 +1,12 @@
-.not-found-title {
+.notFoundTitle {
   font-size: 5rem;
 }
 
-.not-found {
+.notFound {
   text-align: center;
 }
 
-.not-found-link {
+.notFoundLink {
   background: var(--green);
   color: white;
   display: inline-block;

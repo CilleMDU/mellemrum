@@ -49,16 +49,16 @@ export default function HomePage() {
       <header className={styles.hero}>
         <p className={styles.eyebrow}>Kultur i Aarhus</p>
         <h1>Find plads til noget nyt.</h1>
-        <p className={styles["hero-copy"]}>
+        <p className={styles.heroCopy}>
           Koncerter, talks og workshops samlet ét sted. Find dit næste event, og tilmeld dig på få minutter.
         </p>
-        <a className={styles["hero-link"]} href="#events">
+        <a className={styles.heroLink} href="#events">
           Se kommende events ↓
         </a>
       </header>
 
       <main id="events">
-        <section className={styles["section-heading"]}>
+        <section className={styles.sectionHeading}>
           <div>
             <p className={`${styles.eyebrow} ${styles.dark}`}>Det sker</p>
             <h2>Kommende events</h2>
@@ -86,19 +86,19 @@ export default function HomePage() {
           </label>
         </section>
 
-        <section className={styles["event-grid"]}>
+        <section className={styles.eventGrid}>
           {filteredEvents.map((event) => (
-            <article className={styles["event-card"]} key={event.id}>
+            <article className={styles.eventCard} key={event.id}>
               <img src={event.image} alt="" />
-              <div className={styles["event-card-content"]}>
-                <p className={styles["event-category"]}>{event.category}</p>
+              <div className={styles.eventCardContent}>
+                <p className={styles.eventCategory}>{event.category}</p>
                 <h3>{event.title}</h3>
                 <p>{event.summary}</p>
-                <div className={styles["event-meta"]}>
+                <div className={styles.eventMeta}>
                   <span>{formatEventDate(event.date)}</span>
                   <span>{event.venueName}</span>
                 </div>
-                <Link className={styles["card-link"]} to={`/events/${event.id}`}>
+                <Link className={styles.cardLink} to={`/events/${event.id}`}>
                   Læs mere
                 </Link>
               </div>

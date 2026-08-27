@@ -1,4 +1,4 @@
-.event-page {
+.eventPage {
   max-width: 128rem;
 }
 
@@ -20,7 +20,7 @@
   font-size: clamp(1.25rem, 2vw, 1.7rem) !important;
 }
 
-.event-category {
+.eventCategory {
   color: #a5412c;
   font-size: 0.72rem;
   font-weight: 850;
@@ -29,13 +29,13 @@
   text-transform: uppercase;
 }
 
-.back-link {
+.backLink {
   display: inline-block;
   font-size: 0.9rem;
   margin-bottom: 2rem;
 }
 
-.event-detail {
+.eventDetail {
   background: white;
   border-radius: 1.8rem;
   box-shadow: var(--shadow);
@@ -44,37 +44,37 @@
   overflow: hidden;
 }
 
-.event-detail > img {
+.eventDetail > img {
   height: 100%;
   min-height: 60rem;
   object-fit: cover;
   width: 100%;
 }
 
-.event-detail-content {
+.eventDetailContent {
   padding: clamp(2rem, 5vw, 5rem);
 }
 
-.event-detail h1 {
+.eventDetail h1 {
   font-size: clamp(3rem, 5vw, 5.5rem);
   letter-spacing: -0.065em;
   line-height: 0.95;
   margin: 0 0 1.5rem;
 }
 
-.detail-list {
+.detailList {
   border-bottom: 0.1rem solid var(--line);
   border-top: 0.1rem solid var(--line);
   margin: 2rem 0;
   padding: 0.5rem 0;
 }
 
-.detail-list p {
+.detailList p {
   display: grid;
   grid-template-columns: 5rem 1fr;
 }
 
-.signup-panel {
+.signupPanel {
   background: var(--lime);
   border-radius: 1.8rem;
   display: grid;
@@ -84,14 +84,14 @@
   padding: clamp(2rem, 5vw, 5rem);
 }
 
-.signup-panel h2 {
+.signupPanel h2 {
   font-size: clamp(2.2rem, 4vw, 4rem);
   letter-spacing: -0.055em;
   line-height: 1;
   margin: 0;
 }
 
-.signup-panel label {
+.signupPanel label {
   display: grid;
   font-size: 0.78rem;
   font-weight: 800;
@@ -100,12 +100,12 @@
   text-transform: uppercase;
 }
 
-.signup-panel form {
+.signupPanel form {
   display: grid;
   gap: 0.65rem;
 }
 
-.signup-panel form > span {
+.signupPanel form > span {
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0.08em;
@@ -113,7 +113,7 @@
   text-transform: uppercase;
 }
 
-.signup-panel button {
+.signupPanel button {
   background: var(--green);
   border: 0;
   color: white;
@@ -124,24 +124,24 @@
   padding: 0.8rem 1.1rem;
 }
 
-.signup-panel button:disabled {
+.signupPanel button:disabled {
   cursor: wait;
   opacity: 0.65;
 }
 
-.form-message {
+.formMessage {
   background: rgba(255, 255, 255, 0.55);
   margin: 0.5rem 0 0;
   padding: 0.8rem;
 }
 
 @media (max-width: 900px) {
-  .event-detail,
-  .signup-panel {
+  .eventDetail,
+  .signupPanel {
     grid-template-columns: 1fr;
   }
 
-  .event-detail > img {
+  .eventDetail > img {
     min-height: 38rem;
   }
 }

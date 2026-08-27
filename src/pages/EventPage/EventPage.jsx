@@ -37,18 +37,18 @@ export default function EventPage() {
 
   return (
     <>
-      <main className={styles["event-page"]}>
-        <Link className={styles["back-link"]} to="/">
+      <main className={styles.eventPage}>
+        <Link className={styles.backLink} to="/">
           ← Alle events
         </Link>
 
-        <section className={styles["event-detail"]}>
+        <section className={styles.eventDetail}>
           <img src={event.image} alt="" />
-          <div className={styles["event-detail-content"]}>
-            <p className={styles["event-category"]}>{event.category}</p>
+          <div className={styles.eventDetailContent}>
+            <p className={styles.eventCategory}>{event.category}</p>
             <h1>{event.title}</h1>
             <p className={styles.lead}>{event.summary}</p>
-            <div className={styles["detail-list"]}>
+            <div className={styles.detailList}>
               <p>
                 <strong>Dato</strong>
                 {date.toLocaleDateString("da-DK", { weekday: "long", day: "numeric", month: "long" })} kl.{" "}
@@ -77,7 +77,7 @@ export default function EventPage() {
           </div>
         </section>
 
-        <section className={styles["signup-panel"]}>
+        <section className={styles.signupPanel}>
           <div>
             <p className={`${styles.eyebrow} ${styles.dark}`}>Tilmelding</p>
             <h2>Reserver din plads</h2>

@@ -24,21 +24,21 @@ export default function RegistrationsPage() {
 
   return (
     <>
-      <header className={styles["admin-header"]}>
+      <header className={styles.adminHeader}>
         <p className={styles.eyebrow}>Internt overblik</p>
         <h1>Tilmeldinger</h1>
         <p>{registrationCount} tilmeldinger i alt</p>
       </header>
       <main>
-        <div className={styles["registration-list"]}>
-          <div className={`${styles["registration-row"]} ${styles["registration-labels"]}`}>
+        <div className={styles.registrationList}>
+          <div className={`${styles.registrationRow} ${styles.registrationLabels}`}>
             <span>Navn</span>
             <span>Event</span>
             <span>Dato</span>
             <span>Status</span>
           </div>
           {registrations.map((registration) => (
-            <div className={styles["registration-row"]} key={registration.id}>
+            <div className={styles.registrationRow} key={registration.id}>
               <div>
                 <strong>{registration.name}</strong>
                 <small>{registration.email}</small>
