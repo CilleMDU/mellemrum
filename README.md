@@ -1,5 +1,6 @@
 Process
 
+Organization
 - Set up a form of organization
 - Make CSS modules for each page
 - Put the relevant styles in the correct CSS files
@@ -7,3 +8,5 @@ Process
 - Updating the naming format to camelCase
 - Seperating the pages into components to shorten CSS
 - Updating classnames
+
+Creating pages
