@@ -7,7 +7,7 @@
   padding: clamp(5rem, 10vw, 9rem) var(--content-edge) 5rem;
 }
 
-.eyebrow {
+.homeEyebrow {
   color: var(--lime);
   font-size: 0.78rem;
   font-weight: 800;
@@ -16,7 +16,7 @@
   text-transform: uppercase;
 }
 
-.eyebrow.dark {
+.homeEyebrow.dark {
   color: var(--green);
 }
 

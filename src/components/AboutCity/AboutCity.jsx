@@ -12,7 +12,7 @@ export default function AboutCity() {
         <figcaption>Byrum, arkitektur og nye perspektiver.</figcaption>
       </figure>
       <div>
-        <p className={`${styles.eyebrow} ${styles.dark}`}>Aarhus tæt på</p>
+        <p className={`${styles.aboutEyebrow} ${styles.dark}`}>Aarhus tæt på</p>
         <h2 id="about-city-title">Find plads til noget nyt.</h2>
         <p>Mellemrum peger på steder, idéer og fællesskaber på tværs af byen — fra små scener til store tanker.</p>
         <Link className={styles.aboutCta} to="/">

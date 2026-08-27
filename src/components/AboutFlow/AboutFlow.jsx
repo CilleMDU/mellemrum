@@ -4,7 +4,7 @@ export default function AboutFlow() {
   return (
     <section className={styles.aboutFlowSection} aria-labelledby="about-flow-title">
       <div className={styles.aboutSectionHeading}>
-        <p className={`${styles.eyebrow} ${styles.dark}`}>Sådan hænger det sammen</p>
+        <p className={`${styles.aboutEyebrow} ${styles.dark}`}>Sådan hænger det sammen</p>
         <h2 id="about-flow-title">Fra idé til plads i kalenderen.</h2>
       </div>
       <ol className={styles.aboutFlowList}>

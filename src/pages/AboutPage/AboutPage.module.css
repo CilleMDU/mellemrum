@@ -12,7 +12,7 @@
   padding: 5rem var(--content-edge);
 }
 
-.eyebrow {
+.aboutEyebrow {
   color: var(--lime);
   font-size: 0.78rem;
   font-weight: 800;
@@ -21,7 +21,7 @@
   text-transform: uppercase;
 }
 
-.eyebrow.dark {
+.aboutEyebrow.dark {
   color: var(--green);
 }
 

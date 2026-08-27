@@ -13,7 +13,7 @@ export default function EventSignup({ event }) {
   return (
     <section className={styles.signupPanel}>
       <div>
-        <p className={`${styles.eyebrow} ${styles.dark}`}>Tilmelding</p>
+        <p className={`${styles.eventEyebrow} ${styles.dark}`}>Tilmelding</p>
         <h2>Reserver din plads</h2>
         <p>Udfyld formularen, så sender vi din tilmelding til arrangøren.</p>
       </div>
