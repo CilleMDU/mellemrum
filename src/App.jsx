@@ -1,10 +1,11 @@
 import { Routes, Route } from "react-router";
-import Navbar from "./components/Navbar";
-import HomePage from "./pages/HomePage";
-import AboutPage from "./pages/AboutPage";
-import EventPage from "./pages/EventPage";
-import RegistrationsPage from "./pages/RegistrationsPage";
-import NotFoundPage from "./pages/NotFoundPage";
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
+import HomePage from "./pages/HomePage/HomePage";
+import AboutPage from "./pages/AboutPage/AboutPage";
+import EventPage from "./pages/EventPage/EventPage";
+import RegistrationsPage from "./pages/RegistrationPage/RegistrationsPage";
+import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <Route path="/tilmeldinger" element={<RegistrationsPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
+      <Footer />
     </>
   );
 }
