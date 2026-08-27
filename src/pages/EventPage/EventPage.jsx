@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router";
+import styles from "./EventPage.module.css";
 
 const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
 const headers = {
@@ -36,18 +37,18 @@ export default function EventPage() {
 
   return (
     <>
-      <main className="event-page">
-        <Link className="back-link" to="/">
+      <main className={styles["event-page"]}>
+        <Link className={styles["back-link"]} to="/">
           ← Alle events
         </Link>
 
-        <section className="event-detail">
+        <section className={styles["event-detail"]}>
           <img src={event.image} alt="" />
-          <div className="event-detail-content">
-            <p className="event-category">{event.category}</p>
+          <div className={styles["event-detail-content"]}>
+            <p className={styles["event-category"]}>{event.category}</p>
             <h1>{event.title}</h1>
-            <p className="lead">{event.summary}</p>
-            <div className="detail-list">
+            <p className={styles.lead}>{event.summary}</p>
+            <div className={styles["detail-list"]}>
               <p>
                 <strong>Dato</strong>
                 {date.toLocaleDateString("da-DK", { weekday: "long", day: "numeric", month: "long" })} kl.{" "}
@@ -76,9 +77,9 @@ export default function EventPage() {
           </div>
         </section>
 
-        <section className="signup-panel">
+        <section className={styles["signup-panel"]}>
           <div>
-            <p className="eyebrow dark">Tilmelding</p>
+            <p className={`${styles.eyebrow} ${styles.dark}`}>Tilmelding</p>
             <h2>Reserver din plads</h2>
             <p>Udfyld formularen, så sender vi din tilmelding til arrangøren.</p>
           </div>
@@ -98,32 +99,6 @@ export default function EventPage() {
           </form>
         </section>
       </main>
-      <footer className="site-footer">
-        <div className="footer-top">
-          <div className="footer-intro">
-            <p className="footer-brand">
-              mellemrum<span>.</span>
-            </p>
-            <p>Udvalgte kulturoplevelser og nye perspektiver på Aarhus.</p>
-          </div>
-          <nav className="footer-links" aria-label="Footer">
-            <div className="footer-link-group">
-              <p className="footer-heading">Udforsk</p>
-              <Link to="/">Events</Link>
-              <Link to="/om">Om Mellemrum</Link>
-            </div>
-            <div className="footer-link-group">
-              <p className="footer-heading">For arrangører</p>
-              <Link to="/tilmeldinger">Se tilmeldinger</Link>
-              <a href="mailto:hej@mellemrum.dk">Kontakt os</a>
-            </div>
-          </nav>
-        </div>
-        <div className="footer-bottom">
-          <p className="footer-meta">© 2025 Mellemrum</p>
-          <p>Aarhus, Danmark</p>
-        </div>
-      </footer>
     </>
   );
 }
