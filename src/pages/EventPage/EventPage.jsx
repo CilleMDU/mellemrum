@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router";
+import EventSignup from "../../components/EventSignup/EventSignup";
 import styles from "./EventPage.module.css";
 
 const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
@@ -11,8 +12,6 @@ const headers = {
 export default function EventPage() {
   const { eventId } = useParams();
   const [event, setEvent] = useState(null);
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
 
   useEffect(() => {
     async function getEvent() {
@@ -23,11 +22,6 @@ export default function EventPage() {
 
     getEvent();
   }, [eventId]);
-
-  async function handleSubmit(eventSubmit) {
-    eventSubmit.preventDefault();
-    console.log({ name, email, event: event.title });
-  }
 
   if (!event) {
     return null;
@@ -77,27 +71,7 @@ export default function EventPage() {
           </div>
         </section>
 
-        <section className={styles.signupPanel}>
-          <div>
-            <p className={`${styles.eyebrow} ${styles.dark}`}>Tilmelding</p>
-            <h2>Reserver din plads</h2>
-            <p>Udfyld formularen, så sender vi din tilmelding til arrangøren.</p>
-          </div>
-
-          <form onSubmit={handleSubmit}>
-            <label>
-              Navn
-              <input value={name} onChange={(inputEvent) => setName(inputEvent.target.value)} />
-            </label>
-            <span>E-mail</span>
-            <input
-              value={email}
-              onChange={(inputEvent) => setEmail(inputEvent.target.value)}
-              placeholder="dig@example.com"
-            />
-            <button type="submit">Tilmeld mig</button>
-          </form>
-        </section>
+        <EventSignup event={event} />
       </main>
     </>
   );

@@ -1,4 +1,6 @@
-import { Link } from "react-router";
+import AboutAudiences from "../../components/AboutAudiences/AboutAudiences";
+import AboutFlow from "../../components/AboutFlow/AboutFlow";
+import AboutCity from "../../components/AboutCity/AboutCity";
 import styles from "./AboutPage.module.css";
 
 export default function AboutPage() {
@@ -29,68 +31,9 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <section className={styles.aboutAudiences} aria-labelledby="about-audiences-title">
-          <div className={styles.aboutSectionHeading}>
-            <p className={styles.eyebrow}>Målgrupper</p>
-            <h2 id="about-audiences-title">Mellemrum forbinder oplevelser med mennesker.</h2>
-          </div>
-          <div className={styles.aboutAudienceSplit}>
-            <article>
-              <span>Primær målgruppe</span>
-              <h3>For dig, der vil opdage byen</h3>
-              <p>Find lokale oplevelser, få det vigtigste overblik, og tilmeld dig uden unødige omveje.</p>
-              <Link to="/">Udforsk kommende events →</Link>
-            </article>
-            <article>
-              <span>For arrangører</span>
-              <h3>Gør oplevelsen synlig</h3>
-              <p>Del events med et nysgerrigt publikum, og få overblik over de mennesker, der tilmelder sig.</p>
-              <a href="mailto:hej@mellemrum.dk">Tal med os om et event →</a>
-            </article>
-          </div>
-        </section>
-
-        <section className={styles.aboutFlowSection} aria-labelledby="about-flow-title">
-          <div className={styles.aboutSectionHeading}>
-            <p className={`${styles.eyebrow} ${styles.dark}`}>Sådan hænger det sammen</p>
-            <h2 id="about-flow-title">Fra idé til plads i kalenderen.</h2>
-          </div>
-          <ol className={styles.aboutFlowList}>
-            <li>
-              <span>01</span>
-              <strong>Arrangører deler events</strong>
-              <p>Oplevelsen får en tydelig plads på platformen.</p>
-            </li>
-            <li>
-              <span>02</span>
-              <strong>Brugere opdager</strong>
-              <p>Søgning, kategorier og kuratering gør det lettere at vælge.</p>
-            </li>
-            <li>
-              <span>03</span>
-              <strong>Brugere tilmelder sig</strong>
-              <p>Fra interesse til tilmelding i ét sammenhængende flow.</p>
-            </li>
-          </ol>
-        </section>
-
-        <section className={styles.aboutCity} aria-labelledby="about-city-title">
-          <figure>
-            <img
-              src="https://images.unsplash.com/photo-1532370778713-1400f3d62094?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.1.0"
-              alt="Moderne arkitektur med lyse facader og turkise altaner"
-            />
-            <figcaption>Byrum, arkitektur og nye perspektiver.</figcaption>
-          </figure>
-          <div>
-            <p className={`${styles.eyebrow} ${styles.dark}`}>Aarhus tæt på</p>
-            <h2 id="about-city-title">Find plads til noget nyt.</h2>
-            <p>Mellemrum peger på steder, idéer og fællesskaber på tværs af byen — fra små scener til store tanker.</p>
-            <Link className={styles.aboutCta} to="/">
-              Se kommende events →
-            </Link>
-          </div>
-        </section>
+        <AboutAudiences />
+        <AboutFlow />
+        <AboutCity />
       </main>
     </>
   );
