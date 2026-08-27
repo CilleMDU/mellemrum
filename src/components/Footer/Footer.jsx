@@ -3,28 +3,28 @@ import styles from "./Footer.module.css";
 
 export default function Footer() {
   return (
-    <footer className={styles["site-footer"]}>
-      <div className={styles["footer-top"]}>
-        <div className={styles["footer-intro"]}>
-          <p className={styles["footer-brand"]}>
+    <footer className={styles.siteFooter}>
+      <div className={styles.footerTop}>
+        <div className={styles.footerIntro}>
+          <p className={styles.footerBrand}>
             mellemrum<span>.</span>
           </p>
           <p>Udvalgte kulturoplevelser og nye perspektiver på Aarhus.</p>
         </div>
-        <nav className={styles["footer-links"]} aria-label="Footer">
-          <div className={styles["footer-link-group"]}>
-            <p className={styles["footer-heading"]}>Udforsk</p>
+        <nav className={styles.footerLinks} aria-label="Footer">
+          <div className={styles.footerLinkGroup}>
+            <p className={styles.footerHeading}>Udforsk</p>
             <Link to="/">Events</Link>
             <Link to="/om">Om Mellemrum</Link>
           </div>
-          <div className={styles["footer-link-group"]}>
-            <p className={styles["footer-heading"]}>For arrangører</p>
+          <div className={styles.footerLinkGroup}>
+            <p className={styles.footerHeading}>For arrangører</p>
             <Link to="/tilmeldinger">Se tilmeldinger</Link>
             <a href="mailto:hej@mellemrum.dk">Kontakt os</a>
           </div>
         </nav>
       </div>
-      <div className={styles["footer-bottom"]}>
+      <div className={styles.footerBottom}>
         <p>© {new Date().getFullYear()} Mellemrum</p>
         <p>Aarhus, Danmark</p>
       </div>

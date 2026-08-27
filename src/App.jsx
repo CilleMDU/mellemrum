@@ -4,7 +4,7 @@ import Footer from "./components/Footer/Footer";
 import HomePage from "./pages/HomePage/HomePage";
 import AboutPage from "./pages/AboutPage/AboutPage";
 import EventPage from "./pages/EventPage/EventPage";
-import RegistrationsPage from "./pages/RegistrationPage/RegistrationsPage";
+import RegistrationsPage from "./pages/RegistrationsPage/RegistrationsPage";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 
 export default function App() {
