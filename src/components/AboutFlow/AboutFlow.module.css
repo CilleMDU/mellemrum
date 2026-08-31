@@ -52,7 +52,7 @@
 .aboutFlowList strong {
   display: block;
   font-size: clamp(1.4rem, 2.5vw, 2rem);
-  letter-spacing: -0.035em;
+  letter-spacing: calc(-0.01em + 1rem);
   line-height: 1.1;
 }
 

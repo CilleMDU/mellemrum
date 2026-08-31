@@ -1,6 +1,6 @@
 .pageHeader h1 {
   font-size: clamp(3rem, 6vw, 6rem);
-  letter-spacing: -0.075em;
+  letter-spacing: calc(-0.03em + 1rem);
   line-height: 0.9;
   margin: 0;
   max-width: 12ch;
@@ -60,14 +60,14 @@
 
 .aboutPage h2 {
   font-size: clamp(2.6rem, 5vw, 5rem);
-  letter-spacing: -0.06em;
+  letter-spacing: calc(-0.02em + 1rem);
   line-height: 0.95;
   margin: 0;
 }
 
 .aboutPage h3 {
   font-size: clamp(1.8rem, 3vw, 3rem);
-  letter-spacing: -0.045em;
+  letter-spacing: calc(-0.015em + 1rem);
   line-height: 1;
   margin: 0;
 }
