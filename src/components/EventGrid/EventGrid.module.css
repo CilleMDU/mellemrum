@@ -22,6 +22,7 @@
   flex-direction: column;
   min-height: 100%;
   overflow: hidden;
+  position: relative;
   transition: box-shadow 180ms ease, transform 180ms ease;
 }
 
@@ -30,7 +31,38 @@
   transform: translateY(-0.4rem);
 }
 
-.eventCard img {
+.editButton {
+  opacity: 0;
+  position: absolute;
+  right: 0.75rem;
+  top: 0.75rem;
+  transition: opacity 160ms ease;
+  z-index: 2;
+}
+
+.eventCard:hover .editButton {
+  opacity: 1;
+}
+
+.editButton img {
+  aspect-ratio: auto;
+  height: 4rem;
+  width: 4rem;
+}
+
+.editIconHover {
+  display: none;
+}
+
+.editButton:hover .editIcon {
+  display: none;
+}
+
+.editButton:hover .editIconHover {
+  display: block;
+}
+
+.eventCard > img {
   aspect-ratio: 4 / 3;
   display: block;
   object-fit: cover;

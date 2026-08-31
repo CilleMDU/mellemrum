@@ -1,5 +1,7 @@
 import { Link } from "react-router";
 import styles from "./EventGrid.module.css";
+import Edit from "../../img/buttons/Edit.svg"
+import EditHover from "../../img/buttons/EditHover.svg"
 
 function formatEventDate(eventDate) {
   const date = new Date(eventDate);
@@ -17,6 +19,10 @@ export default function EventGrid({ events }) {
     <section className={styles.eventGrid}>
       {events.map((event) => (
         <article className={styles.eventCard} key={event.id}>
+          <Link className={styles.editButton} to={`/events/${event.id}/rediger`} aria-label="Rediger event">
+            <img src={Edit} alt="" className={styles.editIcon} />
+            <img src={EditHover} alt="" className={styles.editIconHover} />
+          </Link>
           <img src={event.image} alt="" />
           <div className={styles.eventCardContent}>
             <p className={styles.eventCategory}>{event.category}</p>
