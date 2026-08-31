@@ -24,12 +24,13 @@ export default function ProfilePage() {
   }, []);
 
   return (
-    <div className={styles.profilePage}>
-      <div className={styles.profileContent}>
-        <div className={styles.profileHeader}>
-          <p className={styles.profileRole}>Arrangør</p>
-        </div>
-        <div className={styles.profileDetails}>
+    <>
+      <header className={styles.profileHeader}>
+        <p className={styles.profileEyebrow}>Arrangør</p>
+        <h1>Jonas Knudsen</h1>
+      </header>
+      <main>
+        <section className={styles.profileCard}>
           <img src={ProfilePicture} alt="Profile" className={styles.profilePicture} />
           <div className={styles.profileInfo}>
             <p className={styles.profileName}>Jonas Knudsen</p>
@@ -37,16 +38,22 @@ export default function ProfilePage() {
             <p className={styles.profileEmail}>jonas.knudsen@example.com</p>
             <p className={styles.profilePhone}>+45 1234 5678</p>
           </div>
-        </div>
-        <div className={styles.profileActions}>
-          <button className={styles.editProfileButton}>Rediger profil</button>
-          <Link className={styles.createEventButton} to="/opret">Opret event</Link>
-          <button className={styles.logoutButton}>Log ud</button>
-        </div>
-        <div className={styles.profileEvents}>
-          <EventGrid events={events} />
-        </div>
-      </div>
-    </div>
+          <div className={styles.profileActions}>
+            <button className={styles.editProfileButton}>Rediger profil</button>
+            <Link className={styles.createEventButton} to="/opret">Opret event</Link>
+            <button className={styles.logoutButton}>Log ud</button>
+          </div>
+        </section>
+
+        <section className={styles.sectionHeading}>
+          <div>
+            <p className={`${styles.profileEyebrow} ${styles.dark}`}>Dine events</p>
+            <h2>Oprettede events</h2>
+          </div>
+        </section>
+
+        <EventGrid events={events} />
+      </main>
+    </>
   );
 }
