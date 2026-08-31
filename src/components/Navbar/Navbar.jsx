@@ -1,6 +1,6 @@
 import { NavLink } from "react-router";
 import styles from "./Navbar.module.css";
-
+import ProfilePic from "../../img/profilePicture.jpg";
 export default function Navbar() {
   return (
     <nav className={styles.siteNav}>
@@ -10,6 +10,7 @@ export default function Navbar() {
       <div className={styles.navLinks}>
         <NavLink to="/">Events</NavLink>
         <NavLink to="/om">Om Mellemrum</NavLink>
+        <NavLink to="/profil"><img src={ProfilePic} alt="Profile" className={styles.profilePic} /></NavLink>
       </div>
     </nav>
   );
