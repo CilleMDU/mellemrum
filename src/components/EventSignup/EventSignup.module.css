@@ -59,6 +59,14 @@
   margin-top: 0.7rem;
   min-height: 5rem;
   padding: 0.8rem 1.1rem;
+  transition:
+    background 160ms ease,
+    color 160ms ease;
+}
+
+.signupPanel button:hover:not(:disabled) {
+  background: white;
+  color: var(--green);
 }
 
 .signupPanel button:disabled {

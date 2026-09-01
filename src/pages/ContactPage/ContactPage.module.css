@@ -105,6 +105,14 @@
   margin-top: 1rem;
   min-height: 5rem;
   padding: 0.8rem 1.1rem;
+  transition:
+    background 160ms ease,
+    color 160ms ease;
+}
+
+.contactForm button:hover:not(:disabled) {
+  background: var(--lime);
+  color: var(--green);
 }
 
 .contactForm button:disabled {
