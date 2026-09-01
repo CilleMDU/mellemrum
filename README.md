@@ -13,6 +13,7 @@ Creating pages
 - Made an AddEvent page
 - Made an EditEvent page
 - Made a ProfilePage
+- Made a ContactPage
 
 Making functions
 - Made it possible to edit events
