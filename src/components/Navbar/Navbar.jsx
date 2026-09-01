@@ -10,7 +10,10 @@ export default function Navbar() {
       <div className={styles.navLinks}>
         <NavLink to="/">Events</NavLink>
         <NavLink to="/om">Om Mellemrum</NavLink>
-        <NavLink to="/profil"><img src={ProfilePic} alt="Profile" className={styles.profilePic} /></NavLink>
+        <NavLink to="/kontakt">Kontakt</NavLink>
+        <NavLink to="/profil">
+          <img src={ProfilePic} alt="Profile" className={styles.profilePic} />
+        </NavLink>
       </div>
     </nav>
   );
