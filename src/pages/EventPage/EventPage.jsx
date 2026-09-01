@@ -6,7 +6,7 @@ import styles from "./EventPage.module.css";
 const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
 const headers = {
   apikey: import.meta.env.VITE_SUPABASE_APIKEY,
-  "Content-Type": "application/json"
+  "Content-Type": "application/json",
 };
 
 export default function EventPage() {
@@ -15,7 +15,9 @@ export default function EventPage() {
 
   useEffect(() => {
     async function getEvent() {
-      const response = await fetch(`${SUPABASE_URL}/events?id=eq.${eventId}`, { headers });
+      const response = await fetch(`${SUPABASE_URL}/events?id=eq.${eventId}`, {
+        headers,
+      });
       const data = await response.json();
       setEvent(data[0]);
     }
@@ -45,15 +47,24 @@ export default function EventPage() {
             <div className={styles.detailList}>
               <p>
                 <strong>Dato</strong>
-                {date.toLocaleDateString("da-DK", { weekday: "long", day: "numeric", month: "long" })} kl.{" "}
-                {date.toLocaleTimeString("da-DK", { hour: "2-digit", minute: "2-digit" })}
+                {date.toLocaleDateString("da-DK", {
+                  weekday: "long",
+                  day: "numeric",
+                  month: "long",
+                })}{" "}
+                kl.{" "}
+                {date.toLocaleTimeString("da-DK", {
+                  hour: "2-digit",
+                  minute: "2-digit",
+                })}
               </p>
               <p>
                 <strong>Sted</strong>
                 <span>
                   {event.venueName}
                   <br />
-                  {event.venueAddress}, {event.venuePostalCode} {event.venueCity}
+                  {event.venueAddress}, {event.venuePostalCode}{" "}
+                  {event.venueCity}
                   {event.venueWebsite && (
                     <>
                       <br />
@@ -68,6 +79,9 @@ export default function EventPage() {
               </p>
             </div>
             <p>{event.description}</p>
+            <Link className={styles.contactHostButton} to="/profil">
+              Kontakt arrangøren
+            </Link>
           </div>
         </section>
 

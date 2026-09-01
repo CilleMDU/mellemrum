@@ -9,6 +9,7 @@ import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 import ProfilePage from "./pages/ProfilePage/ProfilePage";
 import AddEvent from "./pages/AddEvent/AddEvent";
 import EditEvent from "./pages/EditEvent/EditEvent";
+import ContactPage from "./pages/ContactPage/ContactPage";
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
         <Route path="/tilmeldinger" element={<RegistrationsPage />} />
         <Route path="/profil" element={<ProfilePage />} />
         <Route path="/opret" element={<AddEvent />} />
+        <Route path="/kontakt" element={<ContactPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Footer />
