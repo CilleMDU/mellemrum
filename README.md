@@ -10,3 +10,15 @@ Organization
 - Updating classnames
 
 Creating pages
+- Made an AddEvent page
+- Made an EditEvent page
+- Made a ProfilePage
+
+Making functions
+- Made it possible to edit events
+- Made it possible to create events
+- Made it possible to delete events
+- Made micro interactions for signup
+- Made signup link to supabase
+- Made signup include phone
+- Made signup separate first and last name

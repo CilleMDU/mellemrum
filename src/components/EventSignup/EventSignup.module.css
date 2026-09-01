@@ -72,6 +72,11 @@
   padding: 0.8rem;
 }
 
+.formMessageError {
+  background: rgba(165, 65, 44, 0.15);
+  color: #a5412c;
+}
+
 @media (max-width: 900px) {
   .signupPanel {
     grid-template-columns: 1fr;

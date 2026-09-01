@@ -40,8 +40,9 @@ export default function RegistrationsPage() {
           {registrations.map((registration) => (
             <div className={styles.registrationRow} key={registration.id}>
               <div>
-                <strong>{registration.name}</strong>
+                <strong>{registration.lastName}, {registration.firstName}</strong>
                 <small>{registration.email}</small>
+                <small>{registration.phone}</small>
               </div>
               <span>{registration.eventTitle}</span>
               <span>{new Date(registration.eventDate).toLocaleDateString("da-DK")}</span>
