@@ -8,6 +8,7 @@ Organization
 - Updating the naming format to camelCase
 - Seperating the pages into components to shorten CSS
 - Updating classnames
+- Removing template and unused objects
 
 Creating pages
 - Made an AddEvent page
@@ -23,10 +24,4 @@ Making functions
 - Made signup link to supabase
 - Made signup include phone
 - Made signup separate first and last name
-
-Performance
-- Image rendering
-- Cache lifetimes
-- Layout shifts
-- LCP requests
-- Network dependency tree
+- Updating font-sizes and touch targets

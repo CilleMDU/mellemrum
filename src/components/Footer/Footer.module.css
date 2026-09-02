@@ -53,8 +53,13 @@
 }
 
 .footerLinkGroup a {
+  align-items: center;
   color: white;
-  padding: 0.28rem 0;
+  display: inline-flex;
+  font-size: 1.4rem;
+  margin-left: -0.8rem;
+  min-height: 4.4rem;
+  padding: 0.6rem 0.8rem;
   text-decoration-color: rgba(216, 255, 98, 0.35);
   text-underline-offset: 0.25rem;
 }

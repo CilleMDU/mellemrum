@@ -70,8 +70,14 @@
 }
 
 .aboutAudienceSplit a {
+  align-items: center;
   align-self: flex-start;
+  display: inline-flex;
+  font-size: 1.4rem;
   font-weight: 800;
+  margin: -0.8rem 0 -0.8rem -1rem;
+  min-height: 4.4rem;
+  padding: 0.8rem 1rem;
   text-decoration-color: currentColor;
   text-underline-offset: 0.35rem;
 }

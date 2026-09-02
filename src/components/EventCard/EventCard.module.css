@@ -94,14 +94,18 @@
 }
 
 .cardLink {
+  align-items: center;
   align-self: flex-start;
   background: var(--green);
   border-radius: 99.9rem;
   color: white;
-  font-size: 0.88rem;
+  display: inline-flex;
+  font-size: 1.2rem;
   font-weight: 750;
+  justify-content: center;
   margin-top: 1rem;
-  padding: 0.7rem 1rem;
+  min-height: 4.4rem;
+  padding: 0.7rem 1.3rem;
   text-decoration: none;
   transition:
     background 160ms ease,

@@ -69,10 +69,15 @@
 
 .profileActions button,
 .profileActions a {
+  align-items: center;
   border-radius: 99.9rem;
   cursor: pointer;
+  display: inline-flex;
+  font-size: 1.4rem;
   font-weight: 700;
-  padding: 0.65rem 1.2rem;
+  justify-content: center;
+  min-height: 4.4rem;
+  padding: 0.65rem 1.4rem;
   text-align: center;
   text-decoration: none;
 }
