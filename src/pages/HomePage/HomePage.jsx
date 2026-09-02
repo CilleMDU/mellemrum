@@ -45,6 +45,14 @@ export default function HomePage() {
   return (
     <>
       <header className={styles.hero}>
+        <img
+          className={styles.heroImage}
+          src="https://images.unsplash.com/photo-1595146463222-19603449c6af?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.1.0"
+          alt=""
+          fetchpriority="high"
+          loading="eager"
+          decoding="async"
+        />
         <p className={styles.homeEyebrow}>Kultur i Aarhus</p>
         <h1>Find plads til noget nyt.</h1>
         <p className={styles.heroCopy}>
