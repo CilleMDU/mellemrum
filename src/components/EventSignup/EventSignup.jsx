@@ -78,6 +78,7 @@ export default function EventSignup({ event }) {
             value={firstName}
             onChange={(inputEvent) => setFirstName(inputEvent.target.value)}
             required
+            placeholder="Fornavn"
           />
         </label>
         <label>
@@ -86,6 +87,7 @@ export default function EventSignup({ event }) {
             value={lastName}
             onChange={(inputEvent) => setLastName(inputEvent.target.value)}
             required
+            placeholder="Efternavn"
           />
         </label>
         <span>Telefon</span>
