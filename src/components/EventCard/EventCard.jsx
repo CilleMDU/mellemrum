@@ -22,10 +22,29 @@ export default function EventCard({ event }) {
         to={`/events/${event.id}/rediger`}
         aria-label="Rediger event"
       >
-        <img src={Edit} alt="" className={styles.editIcon} />
-        <img src={EditHover} alt="" className={styles.editIconHover} />
+        <img
+          src={Edit}
+          alt=""
+          width="64"
+          height="64"
+          className={styles.editIcon}
+        />
+        <img
+          src={EditHover}
+          alt=""
+          width="64"
+          height="64"
+          className={styles.editIconHover}
+        />
       </Link>
-      <img src={event.image} alt="" />
+      <img
+        src={event.image}
+        alt=""
+        width="400"
+        height="300"
+        loading="lazy"
+        decoding="async"
+      />
       <div className={styles.eventCardContent}>
         <p className={styles.eventCategory}>{event.category}</p>
         <h3>{event.title}</h3>

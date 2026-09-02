@@ -12,7 +12,14 @@ export default function Navbar() {
         <NavLink to="/om">Om Mellemrum</NavLink>
         <NavLink to="/kontakt">Kontakt</NavLink>
         <NavLink to="/profil">
-          <img src={ProfilePic} alt="Profile" className={styles.profilePic} />
+          <img
+            src={ProfilePic}
+            alt="Profile"
+            width="48"
+            height="48"
+            decoding="async"
+            className={styles.profilePic}
+          />
         </NavLink>
       </div>
     </nav>

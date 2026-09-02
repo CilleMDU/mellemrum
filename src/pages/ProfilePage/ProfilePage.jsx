@@ -1,23 +1,27 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router";
 import styles from "./ProfilePage.module.css";
-import ProfilePicture from "../../img/profilePicture.jpg"
+import ProfilePicture from "../../img/profilePicture.jpg";
 import EventGrid from "../../components/EventGrid/EventGrid";
 
 const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
 const headers = {
   apikey: import.meta.env.VITE_SUPABASE_APIKEY,
-  "Content-Type": "application/json"
+  "Content-Type": "application/json",
 };
 
 export default function ProfilePage() {
   const [events, setEvents] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function getEvents() {
-      const response = await fetch(`${SUPABASE_URL}/events?order=date.asc`, { headers });
+      const response = await fetch(`${SUPABASE_URL}/events?order=date.asc`, {
+        headers,
+      });
       const data = await response.json();
       setEvents(data);
+      setLoading(false);
     }
 
     getEvents();
@@ -31,7 +35,14 @@ export default function ProfilePage() {
       </header>
       <main>
         <section className={styles.profileCard}>
-          <img src={ProfilePicture} alt="Profile" className={styles.profilePicture} />
+          <img
+            src={ProfilePicture}
+            alt="Profile"
+            width="128"
+            height="128"
+            decoding="async"
+            className={styles.profilePicture}
+          />
           <div className={styles.profileInfo}>
             <p className={styles.profileName}>Jonas Knudsen</p>
             <p className={styles.profileHandle}>JKeren</p>
@@ -40,19 +51,23 @@ export default function ProfilePage() {
           </div>
           <div className={styles.profileActions}>
             <button className={styles.editProfileButton}>Rediger profil</button>
-            <Link className={styles.createEventButton} to="/opret">Opret event</Link>
+            <Link className={styles.createEventButton} to="/opret">
+              Opret event
+            </Link>
             <button className={styles.logoutButton}>Log ud</button>
           </div>
         </section>
 
         <section className={styles.sectionHeading}>
           <div>
-            <p className={`${styles.profileEyebrow} ${styles.dark}`}>Dine events</p>
+            <p className={`${styles.profileEyebrow} ${styles.dark}`}>
+              Dine events
+            </p>
             <h2>Oprettede events</h2>
           </div>
         </section>
 
-        <EventGrid events={events} />
+        <EventGrid events={events} loading={loading} />
       </main>
     </>
   );

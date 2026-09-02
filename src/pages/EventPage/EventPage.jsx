@@ -39,7 +39,15 @@ export default function EventPage() {
         </Link>
 
         <section className={styles.eventDetail}>
-          <img src={event.image} alt="" />
+          <img
+            src={event.image}
+            alt=""
+            width="800"
+            height="960"
+            loading="eager"
+            fetchpriority="high"
+            decoding="async"
+          />
           <div className={styles.eventDetailContent}>
             <p className={styles.eventCategory}>{event.category}</p>
             <h1>{event.title}</h1>
