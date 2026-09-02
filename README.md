@@ -23,3 +23,10 @@ Making functions
 - Made signup link to supabase
 - Made signup include phone
 - Made signup separate first and last name
+
+Performance
+- Image rendering
+- Cache lifetimes
+- Layout shifts
+- LCP requests
+- Network dependency tree

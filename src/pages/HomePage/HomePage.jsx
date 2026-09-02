@@ -6,28 +6,36 @@ import styles from "./HomePage.module.css";
 const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
 const headers = {
   apikey: import.meta.env.VITE_SUPABASE_APIKEY,
-  "Content-Type": "application/json"
+  "Content-Type": "application/json",
 };
 
 export default function HomePage() {
   const [events, setEvents] = useState([]);
+  const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("Alle");
 
   useEffect(() => {
     async function getEvents() {
-      const response = await fetch(`${SUPABASE_URL}/events?order=date.asc`, { headers });
+      const response = await fetch(`${SUPABASE_URL}/events?order=date.asc`, {
+        headers,
+      });
       const data = await response.json();
       setEvents(data);
+      setLoading(false);
     }
 
     getEvents();
   }, []);
 
-  const categories = ["Alle", ...new Set(events.map((event) => event.category))];
+  const categories = [
+    "Alle",
+    ...new Set(events.map((event) => event.category)),
+  ];
 
   const filteredEvents = events.filter((event) => {
-    const searchText = `${event.title} ${event.summary} ${event.venueName}`.toLowerCase();
+    const searchText =
+      `${event.title} ${event.summary} ${event.venueName}`.toLowerCase();
     const matchesSearch = searchText.includes(search.toLowerCase());
     const matchesCategory = category === "Alle" || event.category === category;
 
@@ -40,7 +48,8 @@ export default function HomePage() {
         <p className={styles.homeEyebrow}>Kultur i Aarhus</p>
         <h1>Find plads til noget nyt.</h1>
         <p className={styles.heroCopy}>
-          Koncerter, talks og workshops samlet ét sted. Find dit næste event, og tilmeld dig på få minutter.
+          Koncerter, talks og workshops samlet ét sted. Find dit næste event, og
+          tilmeld dig på få minutter.
         </p>
         <a className={styles.heroLink} href="#events">
           Se kommende events ↓
@@ -64,7 +73,7 @@ export default function HomePage() {
           categories={categories}
         />
 
-        <EventGrid events={filteredEvents} />
+        <EventGrid events={filteredEvents} loading={loading} />
       </main>
     </>
   );

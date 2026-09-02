@@ -4,6 +4,43 @@
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.skeletonCard {
+  background: white;
+  border: 0.1rem solid var(--line);
+  border-radius: 1.4rem;
+  overflow: hidden;
+}
+
+.skeletonImage {
+  animation: skeletonPulse 1.1s ease-in-out infinite;
+  aspect-ratio: 4 / 3;
+  background: var(--cream);
+}
+
+.skeletonContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding: 1.35rem;
+}
+
+.skeletonLine {
+  animation: skeletonPulse 1.1s ease-in-out infinite;
+  background: var(--cream);
+  border-radius: 0.4rem;
+  height: 1rem;
+}
+
+@keyframes skeletonPulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
 @media (max-width: 900px) {
   .eventGrid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
