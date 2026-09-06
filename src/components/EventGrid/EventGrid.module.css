@@ -5,16 +5,16 @@
 }
 
 .skeletonCard {
-  background: white;
-  border: 0.1rem solid var(--line);
-  border-radius: 1.4rem;
+  background: var(--color-white);
+  border: 0.1rem solid var(--color-line);
+  border-radius: var(--radius-md);
   overflow: hidden;
 }
 
 .skeletonImage {
   animation: skeletonPulse 1.1s ease-in-out infinite;
   aspect-ratio: 4 / 3;
-  background: var(--cream);
+  background: var(--color-cream);
 }
 
 .skeletonContent {
@@ -26,7 +26,7 @@
 
 .skeletonLine {
   animation: skeletonPulse 1.1s ease-in-out infinite;
-  background: var(--cream);
+  background: var(--color-cream);
   border-radius: 0.4rem;
   height: 1rem;
 }

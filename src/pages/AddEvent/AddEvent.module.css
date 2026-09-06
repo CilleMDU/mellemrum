@@ -1,11 +1,11 @@
 .addEventHeader {
-  background: var(--green);
-  color: white;
+  background: var(--color-primary-green);
+  color: var(--color-white);
   padding: 5rem var(--content-edge);
 }
 
 .addEventEyebrow {
-  color: var(--lime);
+  color: var(--color-accent-lime);
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0.16em;
@@ -21,17 +21,17 @@
 }
 
 .addEventHeader > p:last-child {
-  color: rgba(255, 255, 255, 0.78);
+  color: var(--color-white-muted);
   font-size: clamp(1.1rem, 2vw, 1.35rem);
   margin: 1rem 0 0;
   max-width: 34rem;
 }
 
 .addEventForm {
-  background: white;
-  border: 0.1rem solid var(--line);
-  border-radius: 1.4rem;
-  box-shadow: 0 0.8rem 2.6rem rgba(23, 32, 29, 0.05);
+  background: var(--color-white);
+  border: 0.1rem solid var(--color-line);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
   display: grid;
   gap: 0.65rem;
   margin: 0 auto;
@@ -52,28 +52,28 @@
 }
 
 .addEventForm textarea {
-  background: white;
-  border: 0.1rem solid var(--line);
-  border-radius: 0.8rem;
-  color: var(--ink);
+  background: var(--color-white);
+  border: 0.1rem solid var(--color-line);
+  border-radius: var(--radius-sm);
+  color: var(--color-ink);
   font: inherit;
   min-height: 10rem;
   padding: 0.75rem 0.9rem;
   resize: vertical;
-  transition: border-color 160ms ease, box-shadow 160ms ease;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
 }
 
 .addEventForm textarea:focus {
-  border-color: var(--green);
-  box-shadow: 0 0 0 0.3rem rgba(23, 63, 53, 0.12);
+  border-color: var(--color-primary-green);
+  box-shadow: var(--focus-ring);
   outline: none;
 }
 
 .addEventForm button {
-  background: var(--green);
+  background: var(--color-primary-green);
   border: 0;
-  border-radius: 99.9rem;
-  color: white;
+  border-radius: var(--radius-pill);
+  color: var(--color-white);
   cursor: pointer;
   font-weight: 800;
   margin-top: 1rem;
@@ -82,9 +82,9 @@
 }
 
 .formMessage {
-  background: rgba(255, 120, 90, 0.12);
-  border-radius: 0.6rem;
-  color: var(--orange);
+  background: var(--color-danger-orange-tint);
+  border-radius: var(--radius-xs);
+  color: var(--color-danger-orange);
   margin: 0.5rem 0 0;
   padding: 0.8rem;
 }

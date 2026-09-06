@@ -9,6 +9,8 @@ Organization
 - Seperating the pages into components to shorten CSS
 - Updating classnames
 - Removing template and unused objects
+- Turning repeated values in CSS files into variables in index.css root
+- Tried to rename the variables in the root to be more clear in terms of use and content
 
 Creating pages
 - Made an AddEvent page

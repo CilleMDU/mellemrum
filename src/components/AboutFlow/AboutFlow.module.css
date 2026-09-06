@@ -1,5 +1,5 @@
 .aboutEyebrow {
-  color: var(--lime);
+  color: var(--color-accent-lime);
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0.16em;
@@ -8,7 +8,7 @@
 }
 
 .aboutEyebrow.dark {
-  color: var(--green);
+  color: var(--color-primary-green);
 }
 
 .aboutSectionHeading {
@@ -30,7 +30,7 @@
 }
 
 .aboutFlowList li {
-  border-top: 0.5rem solid var(--green);
+  border-top: 0.5rem solid var(--color-primary-green);
   min-height: 26rem;
   padding: 1.6rem clamp(1rem, 3vw, 2.5rem) 0 0;
 }
@@ -40,11 +40,11 @@
 }
 
 .aboutFlowList li:nth-child(3) {
-  border-color: var(--lime);
+  border-color: var(--color-accent-lime);
 }
 
 .aboutFlowList span {
-  color: #a5412c;
+  color: var(--color-tag-rust);
   display: block;
   margin-bottom: 3.5rem;
 }

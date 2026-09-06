@@ -6,7 +6,7 @@ import styles from "./AboutPage.module.css";
 export default function AboutPage() {
   return (
     <>
-      <header className={`${styles.pageHeader} ${styles.aboutHeader}`}>
+      <header className={`${styles.aboutPageHeader} ${styles.aboutHeader}`}>
         <div className={styles.aboutHeaderContent}>
           <p className={styles.aboutEyebrow}>Om Mellemrum</p>
           <h1>Vi skaber mellemrum i kalenderen.</h1>

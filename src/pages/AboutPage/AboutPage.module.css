@@ -1,4 +1,4 @@
-.pageHeader h1 {
+.aboutPageHeader h1 {
   font-size: clamp(3rem, 6vw, 6rem);
   letter-spacing: calc(-0.03em + 1rem);
   line-height: 0.9;
@@ -6,14 +6,14 @@
   max-width: 12ch;
 }
 
-.pageHeader {
-  background: var(--green);
-  color: white;
+.aboutPageHeader {
+  background: var(--color-primary-green);
+  color: var(--color-white);
   padding: 5rem var(--content-edge);
 }
 
 .aboutEyebrow {
-  color: var(--lime);
+  color: var(--color-accent-lime);
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0.16em;
@@ -22,11 +22,11 @@
 }
 
 .aboutEyebrow.dark {
-  color: var(--green);
+  color: var(--color-primary-green);
 }
 
 .lead {
-  color: var(--ink) !important;
+  color: var(--color-ink) !important;
   font-size: clamp(1.25rem, 2vw, 1.7rem) !important;
 }
 
@@ -44,7 +44,7 @@
 }
 
 .aboutHeaderContent > p:last-child {
-  color: rgba(255, 255, 255, 0.78);
+  color: var(--color-white-muted);
   font-size: clamp(1.1rem, 2vw, 1.35rem);
   line-height: 1.5;
   margin: 1.75rem 0 0;
@@ -85,7 +85,7 @@
 }
 
 .aboutIntroCopy {
-  border-top: 0.1rem solid var(--line);
+  border-top: 0.1rem solid var(--color-line);
   padding-top: 1.5rem;
 }
 

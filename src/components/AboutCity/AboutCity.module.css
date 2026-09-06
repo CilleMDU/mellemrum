@@ -1,5 +1,5 @@
 .aboutEyebrow {
-  color: var(--lime);
+  color: var(--color-accent-lime);
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0.16em;
@@ -8,13 +8,13 @@
 }
 
 .aboutEyebrow.dark {
-  color: var(--green);
+  color: var(--color-primary-green);
 }
 
 .aboutCity {
   align-items: stretch;
-  background: var(--cream);
-  border-radius: 1.8rem;
+  background: var(--color-cream);
+  border-radius: var(--radius-lg);
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(32rem, 0.75fr);
   overflow: hidden;
@@ -34,9 +34,9 @@
 }
 
 .aboutCity figcaption {
-  background: var(--lime);
+  background: var(--color-accent-lime);
   bottom: 0;
-  color: var(--green);
+  color: var(--color-primary-green);
   font-size: 0.78rem;
   font-weight: 800;
   left: 0;
@@ -60,14 +60,14 @@
 .aboutCta {
   align-items: center;
   align-self: flex-start;
-  background: var(--green);
-  border-radius: 99.9rem;
-  color: white;
+  background: var(--color-primary-green);
+  border-radius: var(--radius-pill);
+  color: var(--color-white);
   display: inline-flex;
   font-size: 1.4rem;
   font-weight: 800;
   justify-content: center;
-  min-height: 4.4rem;
+  min-height: var(--control-height);
   padding: 0.85rem 1.3rem;
   text-decoration: none;
   text-decoration-color: currentColor;
@@ -86,7 +86,7 @@
 
 @media (max-width: 620px) {
   .aboutCity {
-    border-radius: 1.4rem;
+    border-radius: var(--radius-md);
   }
 
   .aboutCity figure {

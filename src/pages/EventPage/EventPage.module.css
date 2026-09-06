@@ -3,12 +3,12 @@
 }
 
 .lead {
-  color: var(--ink) !important;
+  color: var(--color-ink) !important;
   font-size: clamp(1.25rem, 2vw, 1.7rem) !important;
 }
 
 .eventCategory {
-  color: #a5412c;
+  color: var(--color-tag-rust);
   font-size: 0.72rem;
   font-weight: 850;
   letter-spacing: 0.14em;
@@ -21,14 +21,14 @@
   display: inline-flex;
   font-size: 1.4rem;
   margin: -1rem 0 1.4rem -1rem;
-  min-height: 4.4rem;
+  min-height: var(--control-height);
   padding: 1rem;
 }
 
 .eventDetail {
-  background: white;
-  border-radius: 1.8rem;
-  box-shadow: var(--shadow);
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   overflow: hidden;
@@ -53,8 +53,8 @@
 }
 
 .detailList {
-  border-bottom: 0.1rem solid var(--line);
-  border-top: 0.1rem solid var(--line);
+  border-bottom: 0.1rem solid var(--color-line);
+  border-top: 0.1rem solid var(--color-line);
   margin: 2rem 0;
   padding: 0.5rem 0;
 }
@@ -66,25 +66,25 @@
 
 .contactHostButton {
   align-items: center;
-  background: var(--green);
-  border-radius: 99.9rem;
-  color: white;
+  background: var(--color-primary-green);
+  border-radius: var(--radius-pill);
+  color: var(--color-white);
   display: inline-flex;
   font-size: 1.4rem;
   font-weight: 750;
   justify-content: center;
   margin-top: 1.5rem;
-  min-height: 4.4rem;
+  min-height: var(--control-height);
   padding: 0.75rem 1.6rem;
   text-decoration: none;
   transition:
-    background 160ms ease,
-    color 160ms ease;
+    background var(--transition-fast),
+    color var(--transition-fast);
 }
 
 .contactHostButton:hover {
-  background: var(--lime);
-  color: var(--green);
+  background: var(--color-accent-lime);
+  color: var(--color-primary-green);
 }
 
 @media (max-width: 900px) {

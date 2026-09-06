@@ -1,9 +1,9 @@
 .siteNav {
   align-items: center;
-  background: var(--green);
-  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.1);
+  background: var(--color-primary-green);
+  border-bottom: 0.1rem solid var(--color-white-overlay);
   box-shadow: 0 0.8rem 2.8rem rgba(12, 42, 34, 0.12);
-  color: white;
+  color: var(--color-white);
   display: flex;
   justify-content: space-between;
   min-height: 8rem;
@@ -21,7 +21,7 @@
 }
 
 .brand span {
-  color: var(--lime);
+  color: var(--color-accent-lime);
 }
 
 .navLinks {
@@ -32,23 +32,23 @@
 
 .navLinks a {
   align-items: center;
-  border-radius: 99.9rem;
-  color: rgba(255, 255, 255, 0.78);
+  border-radius: var(--radius-pill);
+  color: var(--color-white-muted);
   display: inline-flex;
   font-size: 1.4rem;
   justify-content: center;
-  min-height: 4.4rem;
+  min-height: var(--control-height);
   padding: 0.8rem 1.1rem;
   text-decoration: none;
   transition:
-    background 160ms ease,
-    color 160ms ease;
+    background var(--transition-fast),
+    color var(--transition-fast);
 }
 
 .navLinks a:hover,
 .navLinks a:global(.active) {
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
+  background: var(--color-white-overlay);
+  color: var(--color-white);
 }
 
 .profilePic {

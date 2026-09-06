@@ -8,13 +8,13 @@
 
 .notFoundLink {
   align-items: center;
-  background: var(--green);
-  color: white;
+  background: var(--color-primary-green);
+  color: var(--color-white);
   display: inline-flex;
   font-size: 1.4rem;
   justify-content: center;
   margin-top: 1rem;
-  min-height: 4.4rem;
+  min-height: var(--control-height);
   padding: 0.75rem 1.3rem;
   text-decoration: none;
 }

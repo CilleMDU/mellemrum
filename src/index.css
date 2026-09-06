@@ -11,18 +11,34 @@
   background: #f5f2ea;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
-  --ink: #17201d;
-  --paper: #f5f2ea;
-  --cream: #e9e3d6;
-  --green: #173f35;
-  --lime: #d8ff62;
-  --orange: #ff785a;
-  --line: rgba(23, 32, 29, 0.18);
-  --shadow: 0 1.8rem 5rem rgba(23, 32, 29, 0.09);
-  --page-gutter: clamp(1.25rem, 4vw, 4rem);
+  --color-ink: #17201d;
+  --color-ink-muted: #59635f;
+  --color-paper: #f5f2ea;
+  --color-cream: #e9e3d6;
+  --color-primary-green: #173f35;
+  --color-accent-lime: #d8ff62;
+  --color-danger-orange: #ff785a;
+  --color-white: #fff;
+  --color-tag-rust: #a5412c;
+  --color-line: rgba(23, 32, 29, 0.18);
+  --color-white-muted: rgba(255, 255, 255, 0.78);
+  --color-white-overlay: rgba(255, 255, 255, 0.1);
+  --color-accent-lime-tint: rgba(216, 255, 98, 0.35);
+  --color-danger-orange-tint: rgba(255, 120, 90, 0.12);
+  --shadow-lg: 0 1.8rem 5rem rgba(23, 32, 29, 0.09);
+  --shadow-sm: 0 0.8rem 2.6rem rgba(23, 32, 29, 0.05);
+  --focus-ring: 0 0 0 0.3rem rgba(23, 63, 53, 0.12);
+  --radius-pill: 99.9rem;
+  --radius-lg: 1.8rem;
+  --radius-md: 1.4rem;
+  --radius-sm: 0.8rem;
+  --radius-xs: 0.6rem;
+  --control-height: 4.4rem;
+  --transition-fast: 160ms ease;
+  --content-gutter: clamp(1.25rem, 4vw, 4rem);
   --content-width: 128rem;
   --content-edge: max(
-    var(--page-gutter),
+    var(--content-gutter),
     calc((100vw - var(--content-width)) / 2)
   );
 }
@@ -55,26 +71,26 @@ select {
 
 main {
   margin: 0 auto;
-  max-width: calc(var(--content-width) + 2 * var(--page-gutter));
-  padding: clamp(3rem, 6vw, 6rem) var(--page-gutter);
+  max-width: calc(var(--content-width) + 2 * var(--content-gutter));
+  padding: clamp(3rem, 6vw, 6rem) var(--content-gutter);
 }
 
 input,
 select {
-  background: white;
-  border: 0.1rem solid var(--line);
-  border-radius: 0.8rem;
-  color: var(--ink);
+  background: var(--color-white);
+  border: 0.1rem solid var(--color-line);
+  border-radius: var(--radius-sm);
+  color: var(--color-ink);
   min-height: 4.8rem;
   padding: 0.75rem 0.9rem;
   transition:
-    border-color 160ms ease,
-    box-shadow 160ms ease;
+    border-color var(--transition-fast),
+    box-shadow var(--transition-fast);
 }
 
 input:focus,
 select:focus {
-  border-color: var(--green);
-  box-shadow: 0 0 0 0.3rem rgba(23, 63, 53, 0.12);
+  border-color: var(--color-primary-green);
+  box-shadow: var(--focus-ring);
   outline: none;
 }

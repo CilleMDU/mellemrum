@@ -1,5 +1,5 @@
 .aboutEyebrow {
-  color: var(--lime);
+  color: var(--color-accent-lime);
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0.16em;
@@ -16,9 +16,9 @@
 }
 
 .aboutAudiences {
-  background: var(--green);
-  border-radius: 1.8rem;
-  color: white;
+  background: var(--color-primary-green);
+  border-radius: var(--radius-lg);
+  color: var(--color-white);
   overflow: hidden;
 }
 
@@ -39,8 +39,8 @@
 }
 
 .aboutAudienceSplit article:last-child {
-  background: var(--lime);
-  color: var(--green);
+  background: var(--color-accent-lime);
+  color: var(--color-primary-green);
 }
 
 .aboutAudienceSplit span {
@@ -51,7 +51,7 @@
 }
 
 .aboutAudienceSplit article:first-child span {
-  color: var(--lime);
+  color: var(--color-accent-lime);
 }
 
 .aboutAudienceSplit article:last-child span {
@@ -76,7 +76,7 @@
   font-size: 1.4rem;
   font-weight: 800;
   margin: -0.8rem 0 -0.8rem -1rem;
-  min-height: 4.4rem;
+  min-height: var(--control-height);
   padding: 0.8rem 1rem;
   text-decoration-color: currentColor;
   text-underline-offset: 0.35rem;
@@ -84,7 +84,7 @@
 
 @media (max-width: 620px) {
   .aboutAudiences {
-    border-radius: 1.4rem;
+    border-radius: var(--radius-md);
   }
 
   .aboutAudienceSplit {

@@ -1,7 +1,7 @@
 .filters {
   background: rgba(255, 255, 255, 0.62);
-  border: 0.1rem solid var(--line);
-  border-radius: 1.4rem;
+  border: 0.1rem solid var(--color-line);
+  border-radius: var(--radius-md);
   display: grid;
   gap: 1rem;
   grid-template-columns: 2fr 1fr;

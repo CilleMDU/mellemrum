@@ -1,11 +1,11 @@
 .registrationsHeader {
-  background: var(--green);
-  color: white;
+  background: var(--color-primary-green);
+  color: var(--color-white);
   padding: 5rem var(--content-edge);
 }
 
 .registrationsEyebrow {
-  color: var(--lime);
+  color: var(--color-accent-lime);
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0.16em;
@@ -21,16 +21,16 @@
 }
 
 .registrationList {
-  background: white;
-  border: 0.1rem solid var(--line);
-  border-radius: 1.4rem;
-  box-shadow: 0 0.8rem 2.6rem rgba(23, 32, 29, 0.05);
+  background: var(--color-white);
+  border: 0.1rem solid var(--color-line);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
   overflow: hidden;
 }
 
 .registrationRow {
   align-items: center;
-  border-bottom: 0.1rem solid var(--line);
+  border-bottom: 0.1rem solid var(--color-line);
   display: grid;
   gap: 1rem;
   grid-template-columns: 1.2fr 1.5fr 0.7fr 0.5fr;
@@ -52,7 +52,7 @@
 }
 
 .registrationLabels {
-  background: var(--cream);
+  background: var(--color-cream);
   font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0.08em;
@@ -61,7 +61,7 @@
 
 .status {
   background: #dff3cc;
-  border-radius: 99.9rem;
+  border-radius: var(--radius-pill);
   display: inline-block;
   font-size: 0.75rem;
   font-weight: 750;

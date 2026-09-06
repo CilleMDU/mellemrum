@@ -1,5 +1,5 @@
 .eventCategory {
-  color: #a5412c;
+  color: var(--color-tag-rust);
   font-size: 0.72rem;
   font-weight: 850;
   letter-spacing: 0.14em;
@@ -8,10 +8,10 @@
 }
 
 .eventCard {
-  background: white;
-  border: 0.1rem solid var(--line);
-  border-radius: 1.4rem;
-  box-shadow: 0 0.8rem 2.6rem rgba(23, 32, 29, 0.05);
+  background: var(--color-white);
+  border: 0.1rem solid var(--color-line);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -23,7 +23,7 @@
 }
 
 .eventCard:hover {
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-lg);
   transform: translateY(-0.4rem);
 }
 
@@ -32,7 +32,7 @@
   position: absolute;
   right: 0.75rem;
   top: 0.75rem;
-  transition: opacity 160ms ease;
+  transition: opacity var(--transition-fast);
   z-index: 2;
 }
 
@@ -80,12 +80,12 @@
 }
 
 .eventCardContent > p:not(.eventCategory) {
-  color: #59635f;
+  color: var(--color-ink-muted);
   line-height: 1.5;
 }
 
 .eventMeta {
-  border-top: 0.1rem solid var(--line);
+  border-top: 0.1rem solid var(--color-line);
   display: flex;
   font-size: 0.82rem;
   justify-content: space-between;
@@ -96,23 +96,23 @@
 .cardLink {
   align-items: center;
   align-self: flex-start;
-  background: var(--green);
-  border-radius: 99.9rem;
-  color: white;
+  background: var(--color-primary-green);
+  border-radius: var(--radius-pill);
+  color: var(--color-white);
   display: inline-flex;
   font-size: 1.2rem;
   font-weight: 750;
   justify-content: center;
   margin-top: 1rem;
-  min-height: 4.4rem;
+  min-height: var(--control-height);
   padding: 0.7rem 1.3rem;
   text-decoration: none;
   transition:
-    background 160ms ease,
-    color 160ms ease;
+    background var(--transition-fast),
+    color var(--transition-fast);
 }
 
 .cardLink:hover {
-  background: var(--lime);
-  color: var(--green);
+  background: var(--color-accent-lime);
+  color: var(--color-primary-green);
 }

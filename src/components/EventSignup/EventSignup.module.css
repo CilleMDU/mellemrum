@@ -1,5 +1,5 @@
 .eventEyebrow {
-  color: var(--lime);
+  color: var(--color-accent-lime);
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0.16em;
@@ -8,12 +8,12 @@
 }
 
 .eventEyebrow.dark {
-  color: var(--green);
+  color: var(--color-primary-green);
 }
 
 .signupPanel {
-  background: var(--lime);
-  border-radius: 1.8rem;
+  background: var(--color-accent-lime);
+  border-radius: var(--radius-lg);
   display: grid;
   gap: 4rem;
   grid-template-columns: 1fr 1fr;
@@ -51,22 +51,22 @@
 }
 
 .signupPanel button {
-  background: var(--green);
+  background: var(--color-primary-green);
   border: 0;
-  color: white;
+  color: var(--color-white);
   cursor: pointer;
   font-weight: 800;
   margin-top: 0.7rem;
   min-height: 5rem;
   padding: 0.8rem 1.1rem;
   transition:
-    background 160ms ease,
-    color 160ms ease;
+    background var(--transition-fast),
+    color var(--transition-fast);
 }
 
 .signupPanel button:hover:not(:disabled) {
-  background: white;
-  color: var(--green);
+  background: var(--color-white);
+  color: var(--color-primary-green);
 }
 
 .signupPanel button:disabled {
@@ -82,7 +82,7 @@
 
 .formMessageError {
   background: rgba(165, 65, 44, 0.15);
-  color: #a5412c;
+  color: var(--color-tag-rust);
 }
 
 @media (max-width: 900px) {

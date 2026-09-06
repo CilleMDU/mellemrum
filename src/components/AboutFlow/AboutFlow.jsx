@@ -2,7 +2,7 @@ import styles from "./AboutFlow.module.css";
 
 export default function AboutFlow() {
   return (
-    <section className={styles.aboutFlowSection} aria-labelledby="about-flow-title">
+    <section className={styles.aboutFlow} aria-labelledby="about-flow-title">
       <div className={styles.aboutSectionHeading}>
         <p className={`${styles.aboutEyebrow} ${styles.dark}`}>Sådan hænger det sammen</p>
         <h2 id="about-flow-title">Fra idé til plads i kalenderen.</h2>
